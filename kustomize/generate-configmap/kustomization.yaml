@@ -1,0 +1,18 @@
+namespace: my-namespace
+namePrefix: dev-
+nameSuffix: "-001"
+commonLabels:
+  app: bingo
+commonAnnotations:
+  oncallPager: 1800-101-1337
+resources:
+- deployment.yaml
+configMapGenerator:
+- name: example-configmap-1
+  files:
+  - application.properties
+secretGenerator:
+- name: example-secret-1
+  files:
+  - password.txt
+
