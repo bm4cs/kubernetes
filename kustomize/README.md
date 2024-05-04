@@ -2,6 +2,18 @@ Kustomize is built into `kubectl` with `-k`. Great samples on [kubernetes.io/doc
 
 > Kustomize provides a template-free way to customize kubernetes manifest
 
+Contents:
+
+- [Generating resources](#generating-resources)
+- [Setting cross cutting fields](#setting-cross-cutting-fields)
+- [Composing and customizing resources](#composing-and-customizing-resources)
+  - [Composing](#composing)
+  - [Customizing](#customizing)
+    - [Patches](#patches)
+    - [Images](#images)
+    - [Replacements](#replacements)
+- [Reference](#reference)
+
 In a nutshell provides 3 key features:
 
 1. generating resources from other sources
